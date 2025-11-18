@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>🚨 Seu Pet Tá Sofrendo! Limpeza Dental VetFlex AGORA!</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet" />
+    <style>
+        * {
+            margin:0; padding:0; box-sizing: border-box; font-family: 'Poppins', sans-serif;
+        }
+        body {
+            background: #fff;
+            color: #222;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        .container {
+            max-width: 480px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header {
+            padding: 20px 0;
+            text-align: center;
+        }
+        .logo {
+            max-width: 180px;
+        }
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            color: #35B3AC;
+            font-weight: 700;
+        }
+        h2 {
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+            color: #222;
+            font-weight: 700;
+        }
+        p {
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+            line-height: 1.4;
+        }
+        .hero {
+            background: #f9f9f9;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px #35B3AC33;
+        }
+        form {
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            border: 2px solid #35B3AC;
+        }
+        label {
+            display: block;
+            margin-bottom: 6px;
+            font-weight: 700;
+            color: #35B3AC;
+        }
+        input[type="text"], input[type="number"] {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 15px;
+            border: 2px solid #35B3AC;
+            border-radius: 6px;
+            font-size: 1rem;
+            transition: border-color 0.3s ease;
+        }
+        input[type="text"]:focus, input[type="number"]:focus {
+            border-color: #1f7f7a;
+            outline: none;
+        }
+        input::placeholder {
+            color: #999;
+        }
+        .btn-submit {
+            background: #35B3AC;
+            color: #fff;
+            font-weight: 700;
+            padding: 15px;
+            width: 100%;
+            border: none;
+            border-radius: 8px;
+            font-size: 1.2rem;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+        .btn-submit:hover {
+            background: #2a8c87;
+        }
+        .benefits {
+            margin-top: 40px;
+        }
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+        }
+        .benefit-item {
+            background: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 5px solid #35B3AC;
+            box-shadow: 0 0 10px #35B3AC22;
+        }
+        .benefit-item h3 {
+            font-size: 1.3rem;
+            margin-bottom: 10px;
+            color: #35B3AC;
+            font-weight: 700;
+        }
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            font-size: 0.9rem;
+            color: #666;
+        }
+        @media(min-width: 600px) {
+            .benefits-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <img src="https://z-cdn-media.chatglm.cn/files/add7663c-36c5-4263-bd5d-170d02c9c0d1_VetFlex%20logo.png?auth_key=1863500600-671a5cc1609e48a8838cc2e724304e8b-0-11cc19077127d167db08cd0fc00b9136" alt="Logo VetFlex" class="logo" />
+    </div>
+</header>
+
+<main>
+    <section class="hero">
+        <div class="container">
+            <h1>Seu Pet Tá com Mau Hálito? Tá na Hora de AGIR! 🦷🔥</h1>
+            <p>Se você tá esperando o tártaro virar problema sério, tá vacilando feio, baby! Seu melhor amigo merece sorriso saudável e vida longa. Chega de desculpa, chega de enrolar. <strong>Reserva AGORA</strong> o produto que vai salvar a boca do seu pet e evitar dor, infecção e gastos absurdos no vet.</p>
+            
+            <form action="#" method="POST" class="reservation-form" onsubmit="return validateForm()">
+                <h2>Ficha de Reserva - Vagas Limitadas! ⏳</h2>
+                <div class="form-group">
+                    <label for="nome">Nome Completo:</label>
+                    <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" required />
+                </div>
+                <div class="form-group">
+                    <label for="endereco">Endereço Completo:</label>
+                    <input type="text" id="endereco" name="endereco" placeholder="Rua, número, bairro, cidade, CEP" required />
+                </div>
+                <div class="form-group">
+                    <label for="quantidade">Quantas unidades você quer salvar seu pet?</label>
+                    <input type="number" id="quantidade" name="quantidade" min="1" placeholder="Ex: 2" required />
+                </div>
+                <button type="submit" class="btn-submit">Quero Reservar e Parar de Perder Tempo!</button>
+            </form>
+        </div>
+    </section>
+
+    <section class="benefits">
+        <div class="container">
+            <h2>Por que o VetFlex é o ÚNICO que seu pet merece? 👇</h2>
+            <div class="benefits-grid">
+                <div class="benefit-item">
+                    <h3>🦴 Saúde Comprovada</h3>
+                    <p>Reduz placa e tártaro na moral, evitando aquela dor que você não quer ver no seu pet.</p>
+                </div>
+                <div class="benefit-item">
+                    <h3>🐾 Aplicação Fácil</h3>
+                    <p>Seu dog ou gato vai aceitar numa boa, sem stress, sem drama. Fácil, rápido e eficiente.</p>
+                </div>
+                <div class="benefit-item">
+                    <h3>❤️ Fórmula 100% Segura</h3>
+                    <p>Sem veneno, sem frescura. Só o que seu pet merece pra ficar saudável e feliz.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <div class="container">
+        <p>&copy; 2024 VetFlex. Seu pet agradece, seu bolso também.</p>
+    </div>
+</footer>
+
+<script>
+    function validateForm() {
+        const nome = document.getElementById('nome').value.trim();
+        const endereco = document.getElementById('endereco').value.trim();
+        const quantidade = document.getElementById('quantidade').value;
+
+        if (!nome || !endereco || quantidade < 1) {
+            alert('Preencha tudo direito, baby! Sem enrolação.');
+            return false;
+        }
+        alert('Reserva feita! Seu pet vai te agradecer com um sorriso de verdade 😎🐶');
+        return true;
+    }
+</script>
+
+</body>
+</html>
